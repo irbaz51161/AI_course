@@ -156,11 +156,41 @@
 # for i in ls:                          
 #     print(i)
 
-# ------------------- MIT = MOST IMPORTANT QUESTIONS ----------------------
-#01. Difference between mutable and immutable
-#02. 4 bit = 1 nibble | 8 bits = 1 byte
-#03. In multiline string, does it change the types or length? NO!
-#04. p = "hello world hello world is good." Question is what are the most repeated words in the string and how much time it came?
+# ------------------- 18 - For loop while loop --------------------
+# ls = ls = ["apple", "banana", "mango"]
+# for i in range(len(ls)):
+    # print(ls[i], i+1)
+# i = 0
+# while i < len(ls):
+#     print(ls[i])
+#     i = i + 1
+
+# ------------------- 19 - Range ----------------------------------
+# for x in range(1, 11):
+#     mul = x * 2
+#     print(f"2 x {x} = {mul}")
+
+# for i in range(0, 20, 2):
+#     print(i)
+
+# ------------------- 20 - List comprehension ---------------------
+#minimize the coding length
+# ls = [x for x in range(2, 15, 2)]
+# print(ls)
+# ls = ["lahore", "Islamabad", "Faislabad", "sparrow"]
+# ls2 = []
+# for i in ls:
+#     if "l" in i:
+#         ls2.append(i)
+# print(ls2)
+# SHORT FORM
+# ls = ["lahore", "islamabad", "faislabad", "sparrow"]
+# ls2 = [x for x in ls if "r" in x] #OR [print(x) for x in ls if "r" in x]
+# ls2 = [x for x  in ls if x != "Islamabad"]
+# ls2 = [x[0].lower() + x[1:-1].upper() + x[-1:].lower() for x in ls]
+# ls2 = [x[0].upper() for x in ls if "F" in x]
+# print(ls2)
+
 
 # ------------------- ASSIGNMENTS -----------------------
 # -------------------- CODE # 01 ------------------------
@@ -281,26 +311,18 @@
 
 #OR      (without using functions)
 
-user_list = []
-times = int(input("For how many times you want to enter the cities name: "))
-for i in range(times):
-    inp_city = input("Enter the city name: ")
-    user_list.append(inp_city)
-print(user_list)
-u_l = []
-for i in user_list:
-    u_l.insert(0, i)
-print(u_l)
-ls = []
-for i in u_l:
-    j = i[0:1].upper() + i[1:-1].lower() + i[-1:].upper()
-    ls.append(j)
-print(ls)
-
-#git status
-#git add .          [changes I did will replace in .git folder / Changes will happen in full folder even in sub folders]
-#git add code.py    [only chnage that sub folder which we updated or changed]
-#git commit -m "second time commiting" 
-#git push
-print("Commiting changes") 
-print("yeah")
+# user_list = []
+# times = int(input("For how many times you want to enter the cities name: "))
+# for i in range(times):
+#     inp_city = input("Enter the city name: ")
+#     user_list.append(inp_city)
+# print(user_list)
+# u_l = []
+# for i in user_list:
+#     u_l.insert(0, i)
+# print(u_l)
+# ls = []
+# for i in u_l:
+#     j = i[0:1].upper() + i[1:-1].lower() + i[-1:].upper()
+#     ls.append(j)
+# print(ls)
