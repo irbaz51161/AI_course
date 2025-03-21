@@ -296,3 +296,8 @@ for i in u_l:
     j = i[0:1].upper() + i[1:-1].lower() + i[-1:].upper()
     ls.append(j)
 print(ls)
+
+#so what is this?
+#git add .          [changes I did will replace in .git folder / Changes will happen in full folder even in sub folders]
+#git add code.py    [only chnage that sub folder which we updated or changed]
+print("Commiting changes") 
